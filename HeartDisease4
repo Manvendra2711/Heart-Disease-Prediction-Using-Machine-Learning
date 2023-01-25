@@ -1,0 +1,2 @@
+laste = disease_df['TenYearCHD'].plot()
+plt.show(laste)

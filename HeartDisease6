@@ -1,0 +1,10 @@
+from sklearn.linear_model import LogisticRegression
+logreg = LogisticRegression()
+logreg.fit(X_train, y_train)
+y_pred = logreg.predict(X_test)
+
+# Evaluation and accuracy
+from sklearn.metrics import jaccard_similarity_score
+print('')
+print('Accuracy of the model in jaccard similarity score is = ',
+	jaccard_similarity_score(y_test, y_pred))
